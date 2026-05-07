@@ -12,14 +12,13 @@ services:
     environment:
 
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: clientes_db
+      MYSQL_DATABASE: appdb
       MYSQL_USER: appuser
       MYSQL_PASSWORD: apppass
 
     ports:
 
       - "3306:3306"
-
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
